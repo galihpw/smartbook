@@ -29,7 +29,11 @@
         <activity
             android:name=".LatihanPGActivity"
             android:label="@string/title_activity_latihan_pg"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SubMenuMateri"
+            android:label="@string/title_activity_sub_menu_materi"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

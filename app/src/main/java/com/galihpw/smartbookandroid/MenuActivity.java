@@ -76,16 +76,14 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        //getSupportActionBar().setDisplayShowHomeEnabled(true);
-
-        /*toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        materiListrikStatis.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),ListReagen.class));
-                finish();
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this,SubMenuMateri.class);
+                startActivity(intent);
             }
-        });*/
+        });
+
     }
 
     @Override
@@ -93,7 +91,6 @@ public class MenuActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
 
-        // return true so that the menu pop up is opened
         return true;
     }
 
