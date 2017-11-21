@@ -7,18 +7,51 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+
+import com.bumptech.glide.Glide;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MenuActivity extends AppCompatActivity {
 
-    @BindView(R.id.fab)
-    FloatingActionButton fab;
-
     @BindView(R.id.toolbar)
     Toolbar toolbar;
+
+    @BindView(R.id.kompetensiDasarImage)
+    ImageView imageDasar;
+
+    @BindView(R.id.kompetensiDasar)
+    RelativeLayout kompetensiDasar;
+
+    @BindView(R.id.petaKonsepImage)
+    ImageView imageKonsep;
+
+    @BindView(R.id.petaKonsep)
+    RelativeLayout petaKonsep;
+
+    @BindView(R.id.materiListrikStatisImage)
+    ImageView imageMateri;
+
+    @BindView(R.id.materiListrikStatis)
+    RelativeLayout materiListrikStatis;
+
+    @BindView(R.id.latihanSoalImage)
+    ImageView imageSoal;
+
+    @BindView(R.id.latihanSoal)
+    RelativeLayout latihanSoal;
+
+    @BindView(R.id.tentangImage)
+    ImageView imageTentang;
+
+    @BindView(R.id.tentang)
+    RelativeLayout tentang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +62,22 @@ public class MenuActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        Glide.with(this).load(R.drawable.latihan_soal).into(imageDasar);
+        Glide.with(this).load(R.drawable.latihan_soal).into(imageKonsep);
+        Glide.with(this).load(R.drawable.latihan_soal).into(imageMateri);
+        Glide.with(this).load(R.drawable.latihan_soal).into(imageSoal);
+        Glide.with(this).load(R.drawable.latihan_soal).into(imageTentang);
+
+        latihanSoal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this,LatihanPGActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         /*toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,14 +86,15 @@ public class MenuActivity extends AppCompatActivity {
                 finish();
             }
         });*/
+    }
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+
+        // return true so that the menu pop up is opened
+        return true;
     }
 
     /*public boolean onKeyDown(int keyCode, KeyEvent event) {
