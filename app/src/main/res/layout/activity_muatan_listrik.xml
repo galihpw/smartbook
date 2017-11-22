@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="com.galihpw.smartbookandroid.Materi.MuatanListrik.MuatanListrik.MuatanListrik"
     android:orientation="vertical"
     android:weightSum="10">
 
@@ -13,23 +14,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="8.99" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:gravity="center"
+        android:layout_height="80dp"
         android:orientation="horizontal"
-        android:padding="10dp"
         android:visibility="visible"
-        android:weightSum="6">
+        android:weightSum="6"
+        android:gravity="center"
+        android:padding="10dp">
 
         <ImageButton
             android:id="@+id/btnLeft"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="80dp"
             android:layout_weight="1"
-            android:background="@drawable/left_select" />
+            android:layout_marginRight="80dp"
+            android:background="@drawable/left_select"/>
 
         <ImageButton
             android:id="@+id/btnHome"
@@ -42,9 +42,10 @@
             android:id="@+id/btnRight"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="80dp"
             android:layout_weight="1"
-            android:background="@drawable/right_select" />
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/right_select"/>
 
     </LinearLayout>
+
 </LinearLayout>

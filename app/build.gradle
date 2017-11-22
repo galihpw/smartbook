@@ -39,4 +39,7 @@ dependencies {
 
     compile "com.jakewharton:butterknife:$butterKnifeVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
+
+    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
 }

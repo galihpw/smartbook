@@ -34,9 +34,7 @@
             android:name=".SubMenuMateri"
             android:label="@string/title_activity_sub_menu_materi"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Materi.MuatanListrik.MuatanListrik">
-
-        </activity>
+        <activity android:name=".MuatanListrik.MuatanListrik"/>
     </application>
 
 </manifest>
