@@ -6,4 +6,5 @@
     <color name="backgroundSplash">#ffffff</color>
     <color name="bgButton">#bb707070</color>
     <color name="backroundSoal">#fdf86f</color>
+    <color name="transparent">#00FFFFFF</color>
 </resources>

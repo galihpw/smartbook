@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textml61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Muatan Listrik"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textml62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="3.	INDUKSI  DENGAN MENGHUBUNGKAN PADA GROUND /BUMI"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textml61" />
+
+        <TextView
+            android:id="@+id/textml63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Simak simulasi dibawah ini!"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textml62" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/ml6gif1"
+            android:layout_width="160dp"
+            android:layout_height="340dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textml63" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ml6gif1"
+            app:layout_constraintLeft_toLeftOf="@+id/ml6gif1"
+            app:layout_constraintRight_toRightOf="@+id/ml6gif1"
+            app:layout_constraintTop_toTopOf="@+id/ml6gif1"
+            app:srcCompat="@drawable/play" />
+
+        <TextView
+            android:id="@+id/textml64"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Cara lain untuk menginduksi muatan pada benda logam adalah dengan menghubungkan logam tersebut menuju ground (bumi) melalui kawat konduktor. Bumi sangat besar dan dapat menyalurkan elektron, maka bumi dengan mudah menerima ataupun memberi elektron, maka dari itu, bumi dapat bertindak sebagai penampung (reservoir) muatan. Jika suatu benda bermuatan negatif didekatkan ke sebuah logam, maka elektron-elektron bebas dalam logam akan menolak dan beberapa elektron akan bergerak menuju bumi melalui kabel . Hal inilah yang menyebaban logam bermuatan positif, Jika kabel dipotong, maka logam akan memiliki muatan induksi positif"
+            app:layout_constraintLeft_toRightOf="@+id/ml6gif1"
+            app:layout_constraintTop_toTopOf="@+id/textml63" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -6,4 +6,12 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_sub_menu_materi"></string>
+    <string name="textml12"><![CDATA[ Mobil sudah menjadi bagian dari hidup kita. Banyak sekali jenis dan warna body mobil yang pernah kita lihat. Tapi pernahkah kamu terpikirkan bagaimana cat mobil bisa sangat rapih. Bagaimana sih cara pengecatan mobil-mobil baru yang ada di pabrik mobil?]]></string>
+    <string name="textml13"><![CDATA[Apakah di cat secara manual ataukah otomatis?]]></string>
+    <string name="textml14"><![CDATA[Lalu, apakah hubungan nya dengan materi yang akan kita bahas? Yuk simak penjelasannya dalam bab ini!]]></string>
+    <string name="textml32">
+        <![CDATA[
+            Tokoh terkenal yang berkecimpung dalam muatan listrik adalah Benjamin Franklin (1706-1900), yang merupakan seorang saintis yang sekaligus filsuf berkewarganegaraan Amerika Serikat, memilih (berdasarkan kesepakatan), muatan pada batang kaca yang digosok oleh kain sutera  adalah <b>muatan positif</b>, sedangkan muatan pada penggaris plastik yang digosok oleh bulu adalah <b>muatan negatif</b>.
+        ]]>
+    </string>
 </resources>

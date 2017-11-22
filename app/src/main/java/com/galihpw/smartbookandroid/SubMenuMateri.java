@@ -1,5 +1,6 @@
 package com.galihpw.smartbookandroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
+import com.galihpw.smartbookandroid.Materi.MuatanListrik.MuatanListrik;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -65,7 +67,13 @@ public class SubMenuMateri extends AppCompatActivity {
         Glide.with(this).load(R.drawable.latihan_soal).into(imageMedan);
         Glide.with(this).load(R.drawable.latihan_soal).into(imageEnergi);
         Glide.with(this).load(R.drawable.latihan_soal).into(imageKapasitor);
-
+        muatanListrik.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SubMenuMateri.this,MuatanListrik.class);
+                startActivity(intent);
+            }
+        });
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
