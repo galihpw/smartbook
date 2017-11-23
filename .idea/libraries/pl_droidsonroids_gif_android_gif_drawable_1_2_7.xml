@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="pl.droidsonroids.gif:android-gif-drawable-1.2.7">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-gif-drawable-1.2.7.aar/448b791564d69534040ad5df3b210b2e/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-gif-drawable-1.2.7.aar/448b791564d69534040ad5df3b210b2e/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-gif-drawable-1.2.7.aar/abba90e1854c765a718f84d0cbbbc2ac/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-gif-drawable-1.2.7.aar/abba90e1854c765a718f84d0cbbbc2ac/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

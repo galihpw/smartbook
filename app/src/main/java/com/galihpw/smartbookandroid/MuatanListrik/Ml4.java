@@ -1,7 +1,7 @@
 package com.galihpw.smartbookandroid.MuatanListrik;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +26,7 @@ public class Ml4 extends Fragment {
         final ImageView play = (ImageView) rootView.findViewById(R.id.play);
 
         final GifImageView gif = (GifImageView) rootView.findViewById(R.id.ml4gif1);
-        gif.setImageResource(R.drawable.archimedes1);
+        gif.setImageResource(R.drawable.img1);
         final GifDrawable gifDrawable = (GifDrawable) gif.getDrawable();
         gifDrawable.stop();
         gif.setOnClickListener(new View.OnClickListener() {
