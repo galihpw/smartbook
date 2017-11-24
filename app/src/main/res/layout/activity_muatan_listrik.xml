@@ -14,22 +14,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="8.99" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:visibility="visible"
-        android:weightSum="6"
+        android:layout_height="60dp"
         android:gravity="center"
-        android:padding="10dp">
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:weightSum="6">
 
         <ImageButton
             android:id="@+id/btnLeft"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_marginRight="80dp"
-            android:background="@drawable/left_select"/>
+            android:layout_weight="1"
+            android:background="@drawable/left_select" />
 
         <ImageButton
             android:id="@+id/btnHome"
@@ -42,9 +43,9 @@
             android:id="@+id/btnRight"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_marginLeft="80dp"
-            android:background="@drawable/right_select"/>
+            android:layout_weight="1"
+            android:background="@drawable/right_select" />
 
     </LinearLayout>
 

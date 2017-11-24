@@ -1,18 +1,20 @@
 package com.galihpw.smartbookandroid.MuatanListrik;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
 import com.ToxicBakery.viewpager.transforms.RotateDownTransformer;
+import com.galihpw.smartbookandroid.MenuActivity;
 import com.galihpw.smartbookandroid.R;
+import com.galihpw.smartbookandroid.SubMenuMateri;
 
 public class MuatanListrik extends AppCompatActivity implements View.OnClickListener {
     /**
@@ -98,7 +100,10 @@ public class MuatanListrik extends AppCompatActivity implements View.OnClickList
                 mPager.setCurrentItem(mPager.getCurrentItem() + 1);
                 break;
             case R.id.btnHome :
+                Intent intent = new Intent(this, SubMenuMateri.class);
+                this.startActivity(intent);
                 this.finish();
+                overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_righ);
         }
 
     }

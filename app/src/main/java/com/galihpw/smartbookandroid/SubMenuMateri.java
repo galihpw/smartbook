@@ -72,6 +72,7 @@ public class SubMenuMateri extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+                overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_righ);
             }
         });
 
@@ -80,6 +81,7 @@ public class SubMenuMateri extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(SubMenuMateri.this,MuatanListrik.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
             }
         });
 

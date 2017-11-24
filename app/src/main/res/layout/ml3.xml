@@ -22,7 +22,7 @@
     <ImageView
         android:id="@+id/ml2image1"
         android:layout_width="160dp"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/ml3image1"
