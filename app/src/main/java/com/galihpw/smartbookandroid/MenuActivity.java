@@ -68,14 +68,14 @@ public class MenuActivity extends AppCompatActivity {
         Glide.with(this).load(R.drawable.latihan_soal).into(imageSoal);
         Glide.with(this).load(R.drawable.latihan_soal).into(imageTentang);
 
-        latihanSoal.setOnClickListener(new View.OnClickListener() {
+        /*latihanSoal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuActivity.this,LatihanPGActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
             }
-        });
+        });*/
 
         materiListrikStatis.setOnClickListener(new View.OnClickListener() {
             @Override
